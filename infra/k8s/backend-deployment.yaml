@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: survey-backend
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: survey-backend
+  template:
+    metadata:
+      labels:
+        app: survey-backend
+    spec:
+      containers:
+      - name: survey-backend
+        image: arc2233/survey-backend:amd64-v1.0
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DATABASE_URL
+          value: mysql+pymysql://admin_mysqldb:Leomessi10!@mysqldb.c1k00aqkg38u.us-east-2.rds.amazonaws.com:3306/surveydb
