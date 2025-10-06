@@ -120,7 +120,6 @@ Insert screenshots of the following:
 
 ## Author
 
-Amlan Chowdhury  
-Graduate Student, George Mason University  
-Email: arc2233@outlook.com 
-GitHub: [amlan-roy-chowdhury](https://github.com/amlan-roy-chowdhury)
+Rabib Ayan 
+Computer Science, Drexel University  
+Email: rabibayan@gmail.com
